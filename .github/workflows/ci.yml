@@ -1,13 +1,13 @@
 # CI Workflow for Bento4
-name: CI
+name: CI & CD
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
 on:
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+    branches: [ "master-poutine" ]
+  workflow_dispatch:
+    branches: [ "master-poutine" ]
 
 jobs:
   build:
